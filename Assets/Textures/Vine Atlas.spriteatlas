@@ -36,13 +36,23 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 4bb9c215f978a9347bf94e1e699aa497, type: 3}
     - {fileID: 2800000, guid: a82d531b1cd3bf44e880fb45a5da0b87, type: 3}
     - {fileID: 2800000, guid: d9c744bafe7c84e488b1b2742a0b90bd, type: 3}
-    totalSpriteSurfaceArea: 0
+    totalSpriteSurfaceArea: 60256
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 67dc6f10023c5ac49aaf5f61f712b34f, type: 3}
+  - {fileID: 21300000, guid: e8f016b05e4b07e44958a82bd99adcb7, type: 3}
+  - {fileID: 21300000, guid: 4bb9c215f978a9347bf94e1e699aa497, type: 3}
+  - {fileID: 21300000, guid: d9c744bafe7c84e488b1b2742a0b90bd, type: 3}
+  - {fileID: 21300000, guid: a82d531b1cd3bf44e880fb45a5da0b87, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - vines_1
+  - vines_2
+  - vines_3
+  - vines_5
+  - vines_4
   m_RenderDataMap: {}
   m_Tag: Vine Atlas
   m_IsVariant: 0
