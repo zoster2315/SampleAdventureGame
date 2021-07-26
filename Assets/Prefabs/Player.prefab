@@ -203,9 +203,10 @@ MonoBehaviour:
   HorzAxis: Horizontal
   JumpButton: Jump
   MaxSpeed: 20
-  JumpPower: 600
-  JumpTimeOut: 0.2
+  JumpPower: 500
+  JumpTimeOut: 1
   CanControl: 1
+  DeathPArticles: {fileID: 6269655245663374839, guid: fae3d5b953ab0604bb8d6b12b7b125dd, type: 3}
 --- !u!1 &2944265545757754834
 GameObject:
   m_ObjectHideFlags: 0

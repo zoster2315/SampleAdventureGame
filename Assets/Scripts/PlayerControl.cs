@@ -15,7 +15,8 @@ public class PlayerControl : MonoBehaviour
     public float JumpTimeOut = 1f;
     public bool CanControl = true;
     public static PlayerControl PlayerInstance = null;
-
+    public GameObject DeathPArticles = null;
+    public float hp = 0;
     public static float Health
     {
         get
@@ -75,6 +76,7 @@ public class PlayerControl : MonoBehaviour
 
     private void FixedUpdate()
     {
+        hp = _Health;
         if (!CanControl || Health <= 0f)
         {
             return;
@@ -102,11 +104,17 @@ public class PlayerControl : MonoBehaviour
 
     private static void Die()
     {
-        Destroy(PlayerInstance.gameObject);
+        if (PlayerControl.PlayerInstance.DeathPArticles != null)
+        {
+            Instantiate(PlayerControl.PlayerInstance.DeathPArticles, PlayerControl.PlayerInstance.transform.position, PlayerControl.PlayerInstance.transform.rotation);
+        }
+
+        Destroy(PlayerControl.PlayerInstance.gameObject);
     }
 
-    private void Reset()
+    public static void Reset()
     {
         Health = 100f;
+        SceneChanger.LastTarget = new Vector3(1.51f, -1.93f, 0f);
     }
 }
